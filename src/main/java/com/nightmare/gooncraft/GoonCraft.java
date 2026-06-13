@@ -98,12 +98,14 @@ public class GoonCraft {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.CUMBUCKET);
             event.accept(ModItems.TYRONEBUCKET);
+            event.accept(ModItems.RAWCUM);
 
         }
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.HARDCUM);
             event.accept(ModBlocks.PRIDEFLAG);
+            event.accept(ModBlocks.HARDCUMORE);
         }
     }
 

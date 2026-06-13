@@ -2,9 +2,11 @@ package com.nightmare.gooncraft.block;
 
 import com.nightmare.gooncraft.GoonCraft;
 import com.nightmare.gooncraft.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -23,6 +25,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> PRIDEFLAG = registerBlock("prideflag",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2).sound(SoundType.COPPER)));
+    public static final DeferredBlock<Block> HARDCUMORE = registerBlock("hardenedcumore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 4),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)  ));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
        DeferredBlock<T> toReturn = BLOCKS.register(name, block);

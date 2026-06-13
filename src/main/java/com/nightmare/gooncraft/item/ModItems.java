@@ -10,8 +10,12 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(GoonCraft.MOD_ID);
 
     public static final DeferredItem<Item> CUMBUCKET = ITEMS.register("bucketofcum",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties()
+                    .stacksTo(16)));
     public static final DeferredItem<Item> TYRONEBUCKET = ITEMS.register("bucketoftyrone",
+            () -> new Item(new Item.Properties()
+                    .stacksTo(16)));
+    public static final DeferredItem<Item> RAWCUM =ITEMS.register("rawcum",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
