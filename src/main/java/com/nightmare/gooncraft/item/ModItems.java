@@ -17,6 +17,8 @@ public class ModItems {
                     .stacksTo(16)));
     public static final DeferredItem<Item> RAWCUM =ITEMS.register("rawcum",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> REFINEDCUM = ITEMS.register("refinedcum",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
