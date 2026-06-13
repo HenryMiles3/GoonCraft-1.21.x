@@ -1,0 +1,20 @@
+package com.nightmare.gooncraft.item;
+
+import com.nightmare.gooncraft.GoonCraft;
+import net.minecraft.world.item.Item;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredRegister;
+
+public class ModItems {
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(GoonCraft.MOD_ID);
+
+    public static final DeferredItem<Item> CUMBUCKET = ITEMS.register("bucketofcum",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TYRONEBUCKET = ITEMS.register("bucketoftyrone",
+            () -> new Item(new Item.Properties()));
+
+    public static void register(IEventBus eventBus) {
+        ITEMS.register(eventBus);
+    }
+}
