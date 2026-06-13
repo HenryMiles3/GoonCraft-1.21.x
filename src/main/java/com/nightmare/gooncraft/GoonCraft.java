@@ -103,6 +103,7 @@ public class GoonCraft {
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.HARDCUM);
+            event.accept(ModBlocks.PRIDEFLAG);
         }
     }
 

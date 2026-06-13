@@ -20,6 +20,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).sound(SoundType.HONEY_BLOCK)));
 
+    public static final DeferredBlock<Block> PRIDEFLAG = registerBlock("prideflag",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2).sound(SoundType.COPPER)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
        DeferredBlock<T> toReturn = BLOCKS.register(name, block);
        registerBlockItem(name, toReturn);
