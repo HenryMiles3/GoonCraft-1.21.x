@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "nightmaregooncraft:bucketofcum"
+    },
+    "B": {
+      "item": "minecraft:lava_bucket"
+    }
+  },
+    "pattern": [
+      "AAA",
+      "ABA",
+      "AAA"
+    ],
+  "result": {
+    "count": 1,
+    "id": "nightmaregooncraft:hardcum"
+  }
+}
