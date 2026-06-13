@@ -1,6 +1,7 @@
 package com.nightmare.gooncraft;
 
 import com.nightmare.gooncraft.block.ModBlocks;
+import com.nightmare.gooncraft.item.ModCreativeModeTabs;
 import com.nightmare.gooncraft.item.ModItems;
 import org.slf4j.Logger;
 
@@ -70,6 +71,8 @@ public class GoonCraft {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -95,7 +98,7 @@ public class GoonCraft {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+        /*if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.CUMBUCKET);
             event.accept(ModItems.TYRONEBUCKET);
             event.accept(ModItems.RAWCUM);
@@ -106,7 +109,7 @@ public class GoonCraft {
             event.accept(ModBlocks.HARDCUM);
             event.accept(ModBlocks.PRIDEFLAG);
             event.accept(ModBlocks.HARDCUMORE);
-        }
+        }*/
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
