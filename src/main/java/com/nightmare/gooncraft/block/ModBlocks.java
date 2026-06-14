@@ -20,11 +20,12 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> HARDCUM = registerBlock("hardcum",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).sound(SoundType.HONEY_BLOCK)));
+                    .strength(4f).sound(SoundType.HONEY_BLOCK).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> PRIDEFLAG = registerBlock("prideflag",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2).sound(SoundType.COPPER)));
+
     public static final DeferredBlock<Block> HARDCUMORE = registerBlock("hardenedcumore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)  ));
