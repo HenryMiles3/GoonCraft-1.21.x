@@ -24,7 +24,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> PRIDEFLAG = registerBlock("prideflag",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(2).sound(SoundType.COPPER)));
+                    .strength(2).sound(SoundType.COPPER).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> HARDCUMORE = registerBlock("hardenedcumore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
