@@ -28,11 +28,19 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> GOONCRAFT_BLOCKS_TAB = CREATIVE_MODE_TAB.register("gooncraftblocktab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.HARDCUM.get()))
+                    .withTabsAfter(ResourceLocation.fromNamespaceAndPath(GoonCraft.MOD_ID, "gooncrafttooltab"))
                     .title(Component.translatable("creativetab.nightmaregooncraft.gooncraftblocktab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.HARDCUM);
                         output.accept(ModBlocks.PRIDEFLAG);
                         output.accept(ModBlocks.HARDCUMORE);
+                    }).build());
+
+    public static final Supplier<CreativeModeTab> GOONCRAFT_TOOLS_TAB = CREATIVE_MODE_TAB.register("gooncrafttooltab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CHISEL.get()))
+                    .title(Component.translatable("creativetab.nightmaregooncraft.gooncrafttooltab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.CHISEL);
                     }).build());
 
 
