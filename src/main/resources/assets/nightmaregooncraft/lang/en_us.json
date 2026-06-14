@@ -9,5 +9,8 @@
   "block.nightmaregooncraft.hardenedcumore": "Hardened Cum Ore",
 
   "creativetab.nightmaregooncraft.gooncraftitemtab": "GoonCraft Items",
-  "creativetab.nightmaregooncraft.gooncraftblocktab": "GoonCraft Blocks"
+  "creativetab.nightmaregooncraft.gooncraftblocktab": "GoonCraft Blocks",
+  "creativetab.nightmaregooncraft.gooncrafttooltab": "GoonCraft Tools",
+
+  "item.nightmaregooncraft.chisel": "Chisel"
 }
