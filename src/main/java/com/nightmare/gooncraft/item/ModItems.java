@@ -1,6 +1,7 @@
 package com.nightmare.gooncraft.item;
 
 import com.nightmare.gooncraft.GoonCraft;
+import com.nightmare.gooncraft.item.custom.ChiselItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -19,6 +20,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> REFINEDCUM = ITEMS.register("refinedcum",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties().durability(32)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
