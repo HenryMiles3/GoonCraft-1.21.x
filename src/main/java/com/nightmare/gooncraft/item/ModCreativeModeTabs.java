@@ -34,6 +34,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.HARDCUM);
                         output.accept(ModBlocks.PRIDEFLAG);
                         output.accept(ModBlocks.HARDCUMORE);
+                        output.accept(ModBlocks.MAGICBLOCK);
                     }).build());
 
     public static final Supplier<CreativeModeTab> GOONCRAFT_TOOLS_TAB = CREATIVE_MODE_TAB.register("gooncrafttooltab",
