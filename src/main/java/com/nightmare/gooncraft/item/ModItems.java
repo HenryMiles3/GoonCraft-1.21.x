@@ -2,6 +2,7 @@ package com.nightmare.gooncraft.item;
 
 import com.nightmare.gooncraft.GoonCraft;
 import com.nightmare.gooncraft.item.custom.ChiselItem;
+import com.nightmare.gooncraft.item.custom.CumBucketItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -11,8 +12,7 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(GoonCraft.MOD_ID);
 
     public static final DeferredItem<Item> CUMBUCKET = ITEMS.register("bucketofcum",
-            () -> new Item(new Item.Properties()
-                    .stacksTo(16)));
+            () -> new CumBucketItem(new Item.Properties().stacksTo(1).food(ModFoodProperties.TASTYCUM)));
     public static final DeferredItem<Item> TYRONEBUCKET = ITEMS.register("bucketoftyrone",
             () -> new Item(new Item.Properties()
                     .stacksTo(16)));
