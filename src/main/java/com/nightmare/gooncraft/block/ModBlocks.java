@@ -1,6 +1,7 @@
 package com.nightmare.gooncraft.block;
 
 import com.nightmare.gooncraft.GoonCraft;
+import com.nightmare.gooncraft.block.custom.MagicBlock;
 import com.nightmare.gooncraft.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -29,6 +30,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> HARDCUMORE = registerBlock("hardenedcumore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)  ));
+    public static final DeferredBlock<Block> MAGICBLOCK = registerBlock("magicblock", () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
        DeferredBlock<T> toReturn = BLOCKS.register(name, block);
