@@ -1,0 +1,10 @@
+{
+  "fun_sound": {
+    "sounds": [
+      {
+        "name": "nightmaregooncraft:fun_sound",
+        "type": "file"
+      }
+    ]
+  }
+}

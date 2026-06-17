@@ -1,8 +1,8 @@
 package com.nightmare.gooncraft.block.custom;
 
 import com.nightmare.gooncraft.item.ModItems;
+import com.nightmare.gooncraft.sound.ModSounds;
 import net.minecraft.core.BlockPos;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
@@ -22,7 +22,7 @@ public class MagicBlock extends Block {
 
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
-        level.playSound(player, pos, SoundEvents.AMETHYST_BLOCK_CHIME, SoundSource.BLOCKS, 1f, 1f);
+        level.playSound(player, pos, ModSounds.FUNSOUND.get(), SoundSource.BLOCKS, 1f, 1f);
         return InteractionResult.SUCCESS;
     }
 

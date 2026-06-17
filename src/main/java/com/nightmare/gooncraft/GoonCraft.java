@@ -3,6 +3,7 @@ package com.nightmare.gooncraft;
 import com.nightmare.gooncraft.block.ModBlocks;
 import com.nightmare.gooncraft.item.ModCreativeModeTabs;
 import com.nightmare.gooncraft.item.ModItems;
+import com.nightmare.gooncraft.sound.ModSounds;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -20,6 +21,8 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import static com.nightmare.gooncraft.sound.ModSounds.SOUND_EVENTS;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(GoonCraft.MOD_ID)
@@ -65,6 +68,7 @@ public class GoonCraft {
         ITEMS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
         //CREATIVE_MODE_TABS.register(modEventBus);
+        ModSounds.SOUND_EVENTS.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
@@ -75,6 +79,7 @@ public class GoonCraft {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
