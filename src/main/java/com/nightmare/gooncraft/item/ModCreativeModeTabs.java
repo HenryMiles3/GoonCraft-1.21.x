@@ -24,6 +24,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TYRONEBUCKET);
                         output.accept(ModItems.RAWCUM);
                         output.accept(ModItems.REFINEDCUM);
+                        output.accept(ModItems.CUMANE);
+                        output.accept(ModItems.DEACTIVATEDBUTANE);
                     }).build());
 
     public static final Supplier<CreativeModeTab> GOONCRAFT_BLOCKS_TAB = CREATIVE_MODE_TAB.register("gooncraftblocktab",

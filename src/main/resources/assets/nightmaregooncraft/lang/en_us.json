@@ -3,6 +3,8 @@
   "item.nightmaregooncraft.bucketoftyrone": "Bucket of Tyrone",
   "item.nightmaregooncraft.rawcum": "Raw Cum",
   "item.nightmaregooncraft.refinedcum": "Refined Cum",
+  "item.nightmaregooncraft.deactivatedbutanefuel": "Deactivated Butane",
+  "item.nightmaregooncraft.cumanefuel": "Cumane",
 
   "block.nightmaregooncraft.hardcum": "Hardened Cum",
   "block.nightmaregooncraft.prideflag": "Gay Pride Flag ",
@@ -13,5 +15,7 @@
   "creativetab.nightmaregooncraft.gooncraftblocktab": "GoonCraft Blocks",
   "creativetab.nightmaregooncraft.gooncrafttooltab": "GoonCraft Tools",
 
-  "item.nightmaregooncraft.chisel": "Chisel"
+  "item.nightmaregooncraft.chisel": "Chisel",
+
+  "sounds.nightmaregooncraft.fun_sound" : "Fun Sound"
 }

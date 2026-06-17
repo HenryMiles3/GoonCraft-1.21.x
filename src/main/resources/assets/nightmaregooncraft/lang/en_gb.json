@@ -13,5 +13,7 @@
   "creativetab.nightmaregooncraft.gooncraftblocktab": "GoonCraft Blocks",
   "creativetab.nightmaregooncraft.gooncrafttooltab": "GoonCraft Tools",
 
-  "item.nightmaregooncraft.chisel": "Chisel"
+  "item.nightmaregooncraft.chisel": "Chisel",
+
+  "sounds.nightmaregooncraft.fun_sound" : "Fun Sound"
 }
