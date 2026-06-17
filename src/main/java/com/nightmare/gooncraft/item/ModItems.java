@@ -3,6 +3,7 @@ package com.nightmare.gooncraft.item;
 import com.nightmare.gooncraft.GoonCraft;
 import com.nightmare.gooncraft.item.custom.ChiselItem;
 import com.nightmare.gooncraft.item.custom.CumBucketItem;
+import com.nightmare.gooncraft.item.custom.FuelItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -22,6 +23,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
             () -> new ChiselItem(new Item.Properties().durability(32)));
+    public static final DeferredItem<Item> CUMANE = ITEMS.register("cumanefuel",
+            () -> new FuelItem(new Item.Properties(), 800));
+    public static final DeferredItem<Item> DEACTIVATEDBUTANE = ITEMS.register("deactivatedbutanefuel",
+            () -> new FuelItem(new Item.Properties(), 10));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
