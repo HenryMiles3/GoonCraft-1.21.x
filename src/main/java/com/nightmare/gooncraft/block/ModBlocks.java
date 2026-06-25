@@ -1,6 +1,7 @@
 package com.nightmare.gooncraft.block;
 
 import com.nightmare.gooncraft.GoonCraft;
+import com.nightmare.gooncraft.block.custom.HardCum;
 import com.nightmare.gooncraft.block.custom.MagicBlock;
 import com.nightmare.gooncraft.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -20,7 +21,7 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(GoonCraft.MOD_ID);
 
     public static final DeferredBlock<Block> HARDCUM = registerBlock("hardcum",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new HardCum(BlockBehaviour.Properties.of()
                     .strength(4f).sound(SoundType.HONEY_BLOCK).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> PRIDEFLAG = registerBlock("prideflag",
