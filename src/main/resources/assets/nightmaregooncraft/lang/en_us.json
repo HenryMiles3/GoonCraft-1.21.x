@@ -17,5 +17,7 @@
 
   "item.nightmaregooncraft.chisel": "Chisel",
 
-  "sounds.nightmaregooncraft.fun_sound" : "Fun Sound"
+  "sounds.nightmaregooncraft.fun_sound" : "Fun Sound",
+
+  "tooltip.nightmaregooncraft.magicblock": "The block emits an unstable aura of power..."
 }
